@@ -30,7 +30,7 @@ function printProducts(ProductFormatterInterface $formatter, array $products): v
     echo $formatter->format($products);
 }
 
-$format = 'csv'; // Change this to 'xml' or 'csv' to test other formats
+$format = 'xml'; // Change this to 'xml' or 'csv' to test other formats
 switch ($format) {
     case 'json':
         $formatter = new JsonProductFormatter();
